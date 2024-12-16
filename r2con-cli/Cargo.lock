@@ -298,16 +298,8 @@ name = "r2con"
 version = "0.1.0"
 dependencies = [
  "bytes",
- "rand",
- "tokio",
-]
-
-[[package]]
-name = "r2con-cli"
-version = "0.1.0"
-dependencies = [
  "clap",
- "r2con",
+ "rand",
  "tokio",
 ]
 

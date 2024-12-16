@@ -2,7 +2,7 @@ use clap::{arg, command, value_parser, Args, Command, Parser};
 use std::{env, error::Error, io::Write, process::ExitCode, time::Duration};
 use tokio::{io::{self, AsyncBufReadExt, AsyncRead, BufReader, Lines}, time::sleep};
 
-use r2con_lib::{RconAuthError, RconClient};
+use r2con::{RconAuthError, RconClient};
 
 const DEFAULT_PORT: i32 = 25575;
 

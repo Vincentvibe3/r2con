@@ -8,6 +8,10 @@ description = "An RCON client for minecraft"
 repository = "https://github.com/Vincentvibe3/r2con"
 keywords = ["RCON", "minecraft"]
 
+[[bin]]
+name = "r2con"
+path = "./src/main.rs"
+
 [dependencies]
 tokio = { version = "1", features = ["full"] }
 clap = { version = "4.5.23", features = ["derive"] }

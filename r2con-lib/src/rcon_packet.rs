@@ -76,7 +76,6 @@ impl Packet{
                 let mut payload_buf = Vec::with_capacity(payload_size);
                 let take = buf.take(payload_size);
                 payload_buf.put(take);
-                // buf.advance(payload_size);
                 buf.get_u16(); // remove the null terminators
                 return Ok(Some(Packet{
                     size:packet_size,
